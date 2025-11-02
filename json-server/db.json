@@ -1,0 +1,76 @@
+{
+  "listTask": [
+    {
+      "id": "14fb",
+      "title": "Todo",
+      "description": "",
+      "priority": "medium",
+      "category": "work",
+      "status": "completed",
+      "completed": true,
+      "dueDate": null,
+      "createdAt": "2025-11-02T00:44:13.000Z"
+    },
+    {
+      "id": "5bbd",
+      "title": "Ola",
+      "description": "Oli",
+      "priority": "high",
+      "category": "personal",
+      "status": "completed",
+      "completed": true,
+      "dueDate": null,
+      "createdAt": "2025-11-02T01:19:00.337Z"
+    }
+  ],
+  "categories": [
+    {
+      "id": "1",
+      "name": "work"
+    },
+    {
+      "id": "2",
+      "name": "personal"
+    },
+    {
+      "id": "3",
+      "name": "study"
+    },
+    {
+      "id": "4",
+      "name": "health"
+    }
+  ],
+  "priorities": [
+    {
+      "id": "1",
+      "level": "low"
+    },
+    {
+      "id": "2",
+      "level": "medium"
+    },
+    {
+      "id": "3",
+      "level": "high"
+    }
+  ],
+  "statuses": [
+    {
+      "id": "1",
+      "name": "pending"
+    },
+    {
+      "id": "2",
+      "name": "completed"
+    },
+    {
+      "id": "3",
+      "name": "in-progress"
+    },
+    {
+      "id": "4",
+      "name": "cancelled"
+    }
+  ]
+}
