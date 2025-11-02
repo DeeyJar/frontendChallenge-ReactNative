@@ -44,9 +44,13 @@ export const Home = () => {
 
     if (listTask.length === 0) {
         return (
-            <View style={style.noTaskArea}>
-                <Text style={style.title}>No tasks available. Please add a new task.</Text>
-                <Image source={NoTasksImg} style={style.noTaskImage} resizeMode="contain" />
+            <View style={style.container}>
+                <ButtonComponent title="Add Task" onPress={() => navigation.navigate('AddTask')} />
+
+                <View style={style.noTaskArea}>
+                    <Text style={style.title}>No tasks available. Please add a new task.</Text>
+                    <Image source={NoTasksImg} style={style.noTaskImage} resizeMode="contain" />
+                </View>
             </View>
         );
     }
@@ -54,7 +58,7 @@ export const Home = () => {
     return (
         <View style={style.container}>
             <ButtonComponent title="Add Task" onPress={() => navigation.navigate('AddTask')} />
-            
+
             {listTaskFilter.length === 0 ? (
                 <View style={style.noTaskArea}>
                     <Text style={style.title}>Not task found.</Text>

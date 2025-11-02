@@ -1,28 +1,5 @@
 {
-  "listTask": [
-    {
-      "id": "14fb",
-      "title": "Todo",
-      "description": "",
-      "priority": "medium",
-      "category": "work",
-      "status": "completed",
-      "completed": true,
-      "dueDate": null,
-      "createdAt": "2025-11-02T00:44:13.000Z"
-    },
-    {
-      "id": "5bbd",
-      "title": "Ola",
-      "description": "Oli",
-      "priority": "high",
-      "category": "personal",
-      "status": "completed",
-      "completed": true,
-      "dueDate": null,
-      "createdAt": "2025-11-02T01:19:00.337Z"
-    }
-  ],
+  "listTask": [],
   "categories": [
     {
       "id": "1",
