@@ -38,7 +38,6 @@ export const Home = () => {
         fetchPriorities();
     }, []);
 
-    // Show full-screen loader only on first load (no tasks yet)
     if (loading && listTask.length === 0) {
         return <ActivityIndicator size="large" color="#ff0000ff" />;
     }

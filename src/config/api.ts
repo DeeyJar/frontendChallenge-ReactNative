@@ -1,16 +1,14 @@
 import Constants from "expo-constants";
 import { NativeModules } from "react-native";
 
-// Prefer value from app.json -> expo.extra.API_URL when it's a real LAN IP (not 0.0.0.0)
 const extra = (Constants.expoConfig && (Constants.expoConfig as any).extra) || {};
 const explicitUrl = (extra.API_URL as string) || "";
 
 function getDevServerHost(): string | undefined {
-	// Try to infer the host from Expo dev server/Metro in development
-	const hostUri = (Constants as any)?.expoConfig?.hostUri as string | undefined; // e.g. "192.168.1.50:19000"
+	const hostUri = (Constants as any)?.expoConfig?.hostUri as string | undefined;
 	if (hostUri) return hostUri.split(":")[0];
 
-	const scriptURL = (NativeModules as any)?.SourceCode?.scriptURL as string | undefined; // e.g. "http://192.168.1.50:19000/index.bundle?..."
+	const scriptURL = (NativeModules as any)?.SourceCode?.scriptURL as string | undefined;
 	if (scriptURL) {
 		const match = scriptURL.match(/^https?:\/\/([^:/]+)(?::\d+)?\//);
 		if (match) return match[1];
